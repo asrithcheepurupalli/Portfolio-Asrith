@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap" rel="stylesheet">
+
+    <title>Om Asato Maa Sad-Gamaya</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        h1 {
+
+            font-size: 40px;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .mantra-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mantra-line {
+            cursor: pointer;
+            margin: 15px;
+            font-size: 34px;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .mantra-line:hover {
+            color: #007BFF;
+        }
+
+        .translation-line {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .meaning {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 20px;
+            color: #555;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .decorative-line {
+            border-top: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .click-message {
+            font-size: 14px;
+            color: #777;
+            margin-top: 0px;
+            padding: 0px 0;
+            position: relative;
+        }
+
+        .before-line,
+        .after-line {
+            content: "";
+            display: block;
+            border-top: 1px solid #ddd;
+            width: 70%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mantra-container">
+        <h1>Om Asato Maa Sad-Gamaya</h1>
+        <div class="click-message">Learn the Meaning by Clicking on the lines</div>
+        <br><br><br><br>
+        <div class="after-line"></div> <br>
+        <div class="mantra-line" onclick="showMeaning('line1')">ॐ असतो मा सद्गमय ।
+        <div class="translation-line">Om Asato Maa Sad-Gamaya |</div>
+    </div>
+        
+        <div class="meaning" id="line1">Meaning: Om, (O Lord) From (the Phenomenal World of) Unreality, make me go (i.e. Lead me) towards the Reality (of Eternal Self),</div>
+
+        <div class="mantra-line" onclick="showMeaning('line2')">तमसो मा ज्योतिर्गमय ।
+        <div class="translation-line">Tamaso Maa Jyotir-Gamaya |</div>
+    </div>
+        
+        <div class="meaning" id="line2">Meaning: From the Darkness (of Ignorance), make me go (i.e. Lead me) towards the Light (of Spiritual Knowledge),</div>
+
+        <div class="mantra-line" onclick="showMeaning('line3')">मृत्योर्मा अमृतं गमय ।
+        <div class="translation-line">Mrtyor-Maa Amrtam Gamaya |</div>
+    </div>
+       
+        <div class="meaning" id="line3">Meaning: From (the World of) Mortality (of Material Attachment), make me go (i.e. Lead me) towards the World of Immortality (of Self-Realization),</div>
+
+        <div class="mantra-line" onclick="showMeaning('line4')">ॐ शान्तिः शान्तिः शान्तिः ॥
+        <div class="translation-line">Om Shaantih Shaantih Shaantih ||</div>
+    </div>
+        <div class="meaning" id="line4">Meaning: Om, Peace, Peace, Peace.</div>
+    </div>
+    <br><br><br>
+    <div class="after-line"></div>
+
+    <script>
+        function showMeaning(lineId) {
+            const meaningElement = document.getElementById(lineId);
+            if (meaningElement.style.display === 'none' || meaningElement.style.display === '') {
+                meaningElement.style.display = 'block';
+                setTimeout(() => {
+                    meaningElement.style.opacity = '1';
+                }, 50);
+            } else {
+                meaningElement.style.opacity = '0';
+                setTimeout(() => {
+                    meaningElement.style.display = 'none';
+                }, 500);
+            }
+        }
+    </script>
+</body>
+
+</html>
