@@ -81,6 +81,7 @@
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
+            align-items: right;
         }
 
         .project {
@@ -127,6 +128,7 @@
             text-align: center;
             padding: 20px 0;
             border-top: 1px solid #682727;
+            position: relative;
         }
         img{
     border-radius: 5px;
@@ -190,6 +192,13 @@
 .social-links a:hover {
     color: #007bff;
 }
+.heart {
+    color: rgb(204, 0, 0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart:hover {
+    transform: scale(1.2); }
 
     </style>
 </head>
@@ -300,6 +309,7 @@ INDIA
     
 
     <footer>
+        <p>Made with <span class="heart">❤</span> using HTML, CSS, JS</p>
             <div class="container">
                 <p>&copy; 2023-24 <a href="https://gravatar.com/asrithcheepurupalli" aria-label="View your Gravatar profile" target="_blank"> <b>Asrith Cheepurupalli</b> </a> <br><br>All Rights Reserved.</p>
             </div>
