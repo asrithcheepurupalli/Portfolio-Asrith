@@ -8,6 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+            cursor: url('pixel-cursor.png') 0 0, auto; /* Default custom cursor */
+        }
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
@@ -39,6 +44,9 @@ a {
 a:hover {
   color: #12d640;
   text-decoration: none;
+  
+nav a{
+  cursor: url('link-cursor.png') 0 0, auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
